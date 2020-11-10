@@ -1,0 +1,4 @@
+com/eduardo/voting/VotingEduardoBruschApplicationTests.java
+ com.eduardo.voting.VotingEduardoBruschApplicationTests
+com/eduardo/voting/service/impl/VotingSessionServiceImplTest.java
+ com.eduardo.voting.service.impl.VotingSessionServiceImplTest
