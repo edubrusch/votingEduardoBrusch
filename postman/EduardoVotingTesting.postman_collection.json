@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "2ac1b411-5bb2-49a6-abdc-f4ad63f0e884",
+		"name": "EduardoVotingTesting",
+		"description": "Test collection for voting application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01. Create Voting Session",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3a8cc59c-a164-4479-9489-39d94af17d0e",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"registeredSession\", jsonData.sessionIdentifier);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sessionDurationMinutes\": 10,\r\n    \"subject\": \"Devemos impor horario de silencio no condominio até 20:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{votingUrl}}/v1/session",
+					"host": [
+						"{{votingUrl}}"
+					],
+					"path": [
+						"v1",
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02. Vote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03. Verify Voting Results",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04. CPFClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
