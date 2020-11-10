@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.eduardo.voting.service.impl.VotingSessionServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-10T12:49:34" hostname="DESKTOP-C7RQK6B" time="0.404">
-  <properties/>
-  <testcase name="Should create Session and return it" classname="com.eduardo.voting.service.impl.VotingSessionServiceImplTest" time="0.404"/>
-  <system-out><![CDATA[09:49:34.560 [Test worker] INFO com.eduardo.voting.service.impl.VotingSessionServiceImpl - VotingSessionServiceImpl - Create Session
-09:49:34.566 [Test worker] INFO com.eduardo.voting.service.impl.VotingSessionServiceImpl - VotingSessionServiceImpl - Session null has been created
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
